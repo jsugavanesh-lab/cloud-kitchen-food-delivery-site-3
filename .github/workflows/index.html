@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudKitchen - Fresh Food Delivered To Your Doorstep</title>
+    <meta name="description" content="Order fresh, delicious food from CloudKitchen. Fast delivery, quality ingredients, and amazing taste.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle">
+        <i class="bi bi-moon-fill"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <i class="bi bi-shop"></i> CloudKitchen
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                    <li><a href="register.html" class="btn btn-secondary">Sign Up</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobileMenuToggle" class="mobile-menu-toggle">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div id="offcanvas" class="offcanvas">
+        <div class="offcanvas-header">
+            <h3>CloudKitchen</h3>
+            <button id="offcanvasClose" class="offcanvas-close">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Fresh Food Delivered To Your Doorstep</h1>
+            <p>Experience the convenience of cloud kitchen dining with our carefully crafted meals, prepared with love and delivered with speed.</p>
+            <div class="hero-buttons">
+                <a href="#featured" class="btn btn-primary btn-lg">Order Now</a>
+                <a href="services.html" class="btn btn-outline btn-lg">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section id="featured" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Dishes</h2>
+            <div class="food-grid">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/ef/d1/ab/efd1ab4b55f460cd93a174e139a0da96.jpg" alt="Gourmet Burger" class="card-img">
+                    <h3 class="card-title">Gourmet Burger</h3>
+                    <p class="card-text">Juicy beef patty with fresh vegetables, special sauce, and artisanal bun. A true classic reimagined.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$12.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/be/93/1b/be931b33e2eb94298174c9075e707f1b.jpg" alt="Garden Fresh Salad" class="card-img">
+                    <h3 class="card-title">Garden Fresh Salad</h3>
+                    <p class="card-text">Crisp lettuce, colorful vegetables, and our signature dressing. Healthy never tasted so good.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$8.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/4b/6b/17/4b6b177b133679bf9f5b234d00f19f88.jpg" alt="Wood Fired Pizza" class="card-img">
+                    <h3 class="card-title">Wood Fired Pizza</h3>
+                    <p class="card-text">Authentic Italian-style pizza with fresh mozzarella, basil, and San Marzano tomatoes.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$15.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/88/da/6f/88da6f88f6309fe8e42b1b8f563469d3.jpg" alt="Grilled Chicken" class="card-img">
+                    <h3 class="card-title">Grilled Chicken</h3>
+                    <p class="card-text">Tender grilled chicken breast with herbs and spices, served with seasonal vegetables.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$14.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/01/b4/7d/01b47d64e01de0506ecaa13555c0bdc9.jpg" alt="Pasta Primavera" class="card-img">
+                    <h3 class="card-title">Pasta Primavera</h3>
+                    <p class="card-text">Fresh pasta with seasonal vegetables in a light cream sauce. Italian comfort at its best.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$11.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/0b/53/12/0b5312642a90d9ca3f7ba93d4265544c.jpg" alt="Fish and Chips" class="card-img">
+                    <h3 class="card-title">Fish and Chips</h3>
+                    <p class="card-text">Crispy battered fish with golden fries and tartar sauce. A British classic perfected.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$13.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section features">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                    <h3 class="feature-title">Order</h3>
+                    <p>Browse our menu and place your order online or through our mobile app. Quick, easy, and secure.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-fire"></i>
+                    </div>
+                    <h3 class="feature-title">Cook</h3>
+                    <p>Our expert chefs prepare your meal with fresh ingredients and attention to detail.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <h3 class="feature-title">Deliver</h3>
+                    <p>Fast delivery to your doorstep. Track your order in real-time and enjoy hot, fresh food.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title text-white">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Amazing food quality and super fast delivery! The burger was juicy and perfectly cooked. Will definitely order again!"</p>
+                    <p class="testimonial-author">- Sarah Johnson</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Best cloud kitchen service in town! Fresh ingredients, great taste, and excellent customer service. Highly recommended!"</p>
+                    <p class="testimonial-author">- Mike Chen</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I order from CloudKitchen at least twice a week. The consistency in quality and taste is remarkable. Love it!"</p>
+                    <p class="testimonial-author">- Emily Davis</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Ready to Order?</h2>
+            <p class="mb-4">Join thousands of satisfied customers enjoying delicious meals every day.</p>
+            <div class="hero-buttons justify-content-center">
+                <a href="register.html" class="btn btn-primary btn-lg">Create Account</a>
+                <a href="pricing.html" class="btn btn-outline btn-lg">View Plans</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="bi bi-shop"></i> CloudKitchen</h3>
+                    <p>Fresh, delicious food delivered to your doorstep. Experience the future of dining with our cloud kitchen service.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CloudKitchen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./main.js"></script>
+</body>
+</html>

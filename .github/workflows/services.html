@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - CloudKitchen Food Delivery & Catering</title>
+    <meta name="description" content="Explore CloudKitchen services: food delivery, catering, meal plans, and bulk orders. Quality food delivered fast to your doorstep.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle">
+        <i class="bi bi-moon-fill"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <i class="bi bi-shop"></i> CloudKitchen
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                    <li><a href="register.html" class="btn btn-secondary">Sign Up</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobileMenuToggle" class="mobile-menu-toggle">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div id="offcanvas" class="offcanvas">
+        <div class="offcanvas-header">
+            <h3>CloudKitchen</h3>
+            <button id="offcanvasClose" class="offcanvas-close">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive food solutions for every need</p>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="section">
+        <div class="container">
+            <div class="food-grid">
+                <!-- Food Delivery Service -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/34/d7/e5/34d7e556ea24c39a317d1e7916905002.jpg" alt="Food Delivery" class="card-img">
+                    <h3 class="card-title">Food Delivery</h3>
+                    <p class="card-text">Fast, reliable food delivery service bringing restaurant-quality meals to your doorstep. Order from our extensive menu and enjoy hot, fresh food within 30 minutes.</p>
+                    <ul class="list-unstyled mb-3">
+                        <li><i class="bi bi-check-circle text-success"></i> 30-minute delivery guarantee</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Real-time order tracking</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Contactless delivery option</li>
+                        <li><i class="bi bi-check-circle text-success"></i> 24/7 service available</li>
+                    </ul>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h5 text-primary mb-0">Starting at $5.99</span>
+                        <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Catering Service -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/1200x/2d/b1/f6/2db1f650bddd6c7f0c1aa5363fc8c993.jpg" alt="Catering Service" class="card-img">
+                    <h3 class="card-title">Catering Service</h3>
+                    <p class="card-text">Professional catering for events, parties, and corporate functions. Customized menus to suit your occasion with impeccable service and presentation.</p>
+                    <ul class="list-unstyled mb-3">
+                        <li><i class="bi bi-check-circle text-success"></i> Custom menu planning</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Professional serving staff</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Event setup & cleanup</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Dietary accommodations</li>
+                    </ul>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h5 text-primary mb-0">Starting at $15/person</span>
+                        <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Meal Plans -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/b2/ed/72/b2ed72d81669b6b7b0bfc47a9dd30e3d.jpg" alt="Meal Plans" class="card-img">
+                    <h3 class="card-title">Meal Plans</h3>
+                    <p class="card-text">Subscription-based meal plans for busy professionals and families. Healthy, balanced meals delivered daily or weekly to maintain your lifestyle.</p>
+                    <ul class="list-unstyled mb-3">
+                        <li><i class="bi bi-check-circle text-success"></i> Daily/Weekly/Monthly options</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Customizable meal preferences</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Nutritional information included</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Pause or cancel anytime</li>
+                    </ul>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h5 text-primary mb-0">Starting at $199/month</span>
+                        <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Bulk Orders -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/6c/d3/de/6cd3defc94763a0f420f6e2a48cd8e82.jpg" alt="Bulk Orders" class="card-img">
+                    <h3 class="card-title">Bulk Orders</h3>
+                    <p class="card-text">Large quantity orders for offices, schools, and institutions. Special pricing for bulk orders with guaranteed freshness and timely delivery.</p>
+                    <ul class="list-unstyled mb-3">
+                        <li><i class="bi bi-check-circle text-success"></i> Volume discounts available</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Scheduled delivery options</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Dedicated account manager</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Custom packaging solutions</li>
+                    </ul>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h5 text-primary mb-0">Custom Pricing</span>
+                        <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Features -->
+    <section class="section features">
+        <div class="container">
+            <h2 class="section-title text-center">Why Choose Our Services?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-lightning"></i>
+                    </div>
+                    <h3 class="feature-title">Fast Delivery</h3>
+                    <p>Quick delivery service ensuring your food arrives hot and fresh, right when you need it.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3 class="feature-title">Quality Guaranteed</h3>
+                    <p>Premium ingredients and expert preparation ensure every meal meets our high standards.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p>Round-the-clock customer service to assist with orders, inquiries, and special requests.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Wide Coverage</h3>
+                    <p>Extensive delivery network covering multiple areas with expanding service regions.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h3 class="feature-title">Easy Ordering</h3>
+                    <p>Simple ordering process through website, mobile app, or phone with multiple payment options.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-heart"></i>
+                    </div>
+                    <h3 class="feature-title">Customer Satisfaction</h3>
+                    <p>Your satisfaction is our priority with quality assurance and feedback-driven improvements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">How Our Services Work</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-1-circle"></i>
+                    </div>
+                    <h4>Choose Service</h4>
+                    <p>Select the service that best fits your needs - delivery, catering, meal plans, or bulk orders.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-2-circle"></i>
+                    </div>
+                    <h4>Customize Order</h4>
+                    <p>Pick your meals, specify preferences, and schedule delivery according to your convenience.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-3-circle"></i>
+                    </div>
+                    <h4>Payment & Confirmation</h4>
+                    <p>Secure payment processing with instant order confirmation and tracking details.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-4-circle"></i>
+                    </div>
+                    <h4>Enjoy Your Meal</h4>
+                    <p>Receive your fresh, delicious food and enjoy the convenience of our service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title text-center text-white">Current Special Offers</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h4><i class="bi bi-gift"></i> First Order Discount</h4>
+                        <p>Get 20% off your first food delivery order. Use code: FIRST20</p>
+                        <p class="text-warning">Valid for new customers only</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h4><i class="bi bi-percent"></i> Bulk Order Special</h4>
+                        <p>Save 15% on orders over 50 meals. Perfect for offices and events.</p>
+                        <p class="text-warning">Limited time offer</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h4><i class="bi bi-calendar-check"></i> Meal Plan Bonus</h4>
+                        <p>Sign up for monthly meal plan and get 5 free extra meals.</p>
+                        <p class="text-warning">New subscribers only</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Ready to Experience Our Services?</h2>
+            <p class="mb-4">Choose the perfect service for your needs and enjoy delicious food delivered to you.</p>
+            <div class="hero-buttons justify-content-center">
+                <a href="register.html" class="btn btn-primary btn-lg">Get Started</a>
+                <a href="contact.html" class="btn btn-outline btn-lg">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="bi bi-shop"></i> CloudKitchen</h3>
+                    <p>Fresh, delicious food delivered to your doorstep. Experience the future of dining with our cloud kitchen service.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CloudKitchen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudKitchen Healthy - Fresh & Nutritious Meals Delivered</title>
+    <meta name="description" content="Order healthy, nutritious meals from CloudKitchen. Fresh ingredients, balanced nutrition, and great taste delivered to your door.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle">
+        <i class="bi bi-moon-fill"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <i class="bi bi-heart-pulse"></i> CloudKitchen Healthy
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home-2.html" class="active">Healthy Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                    <li><a href="register.html" class="btn btn-secondary">Sign Up</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobileMenuToggle" class="mobile-menu-toggle">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div id="offcanvas" class="offcanvas">
+        <div class="offcanvas-header">
+            <h3>CloudKitchen Healthy</h3>
+            <button id="offcanvasClose" class="offcanvas-close">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-2.html">Healthy Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section - Different Layout -->
+    <section class="hero" style="background: linear-gradient(135deg, var(--tertiary-color), var(--primary-color));">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Eat Healthy, Live Better</h1>
+                    <p>Nutritious, delicious meals crafted with fresh, organic ingredients. Perfect for health-conscious individuals who refuse to compromise on taste.</p>
+                    <div class="hero-buttons">
+                        <a href="#healthy-menu" class="btn btn-primary btn-lg">Order Healthy Meals</a>
+                        <a href="#nutrition-info" class="btn btn-outline btn-lg">Learn More</a>
+                    </div>
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="text-center">
+                                <div class="h3 mb-0 text-white">500+</div>
+                                <small class="text-white-50">Healthy Options</small>
+                            </div>
+                            <div class="text-center">
+                                <div class="h3 mb-0 text-white">100%</div>
+                                <small class="text-white-50">Organic Ingredients</small>
+                            </div>
+                            <div class="text-center">
+                                <div class="h3 mb-0 text-white">30min</div>
+                                <small class="text-white-50">Fast Delivery</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/600x400?text=Healthy+Food+Collection" alt="Healthy Food" class="img-fluid rounded-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Info Section -->
+    <section id="nutrition-info" class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Healthy Meals?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-leaf"></i>
+                            </div>
+                            <h4>Fresh & Organic</h4>
+                            <p>We source only the freshest organic ingredients from local farms to ensure maximum nutrition and flavor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-calculator"></i>
+                            </div>
+                            <h4>Calorie-Counted</h4>
+                            <p>Every meal is carefully calculated to provide balanced nutrition with accurate calorie information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <h4>Heart-Healthy</h4>
+                            <p>Our meals are designed to support cardiovascular health with low sodium and healthy fats.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthy Menu -->
+    <section id="healthy-menu" class="section features">
+        <div class="container">
+            <h2 class="section-title">Healthy Menu Selection</h2>
+            <div class="food-grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300?text=Quinoa+Bowl" alt="Quinoa Power Bowl" class="card-img">
+                    <h3 class="card-title">Quinoa Power Bowl</h3>
+                    <p class="card-text">Protein-rich quinoa with roasted vegetables, avocado, and tahini dressing. 450 calories, 18g protein.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$12.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300?text=Green+Smoothie" alt="Green Detox Smoothie" class="card-img">
+                    <h3 class="card-title">Green Detox Smoothie</h3>
+                    <p class="card-text">Spinach, kale, banana, mango, and chia seeds. 200 calories, packed with vitamins and antioxidants.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$7.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300?text=Grilled+Salmon" alt="Grilled Salmon" class="card-img">
+                    <h3 class="card-title">Grilled Salmon</h3>
+                    <p class="card-text">Omega-3 rich salmon with steamed asparagus and brown rice. 380 calories, 35g protein.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$16.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300?text=Buddha+Bowl" alt="Buddha Bowl" class="card-img">
+                    <h3 class="card-title">Buddha Bowl</h3>
+                    <p class="card-text">Chickpeas, sweet potato, kale, and tahini dressing. Plant-based protein and fiber rich. 420 calories.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$11.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300?text=Acai+Bowl" alt="Acai Bowl" class="card-img">
+                    <h3 class="card-title">Acai Bowl</h3>
+                    <p class="card-text">Antioxidant-rich acai with granola, fresh berries, and coconut. 320 calories, naturally sweet.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$9.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300?text=Tofu+Stir+Fry" alt="Tofu Stir Fry" class="card-img">
+                    <h3 class="card-title">Tofu Stir Fry</h3>
+                    <p class="card-text">Organic tofu with mixed vegetables in ginger-soy sauce. 350 calories, 20g plant protein.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="h4 text-primary mb-0">$10.99</span>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diet Plans -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Personalized Diet Plans</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="bi bi-lightning-charge text-warning fs-1 mb-3"></i>
+                            <h5>Keto Friendly</h5>
+                            <p>Low-carb, high-fat meals perfect for ketogenic diet enthusiasts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="bi bi-flower1 text-success fs-1 mb-3"></i>
+                            <h5>Vegan</h5>
+                            <p>100% plant-based meals rich in protein and essential nutrients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="bi bi-droplet text-info fs-1 mb-3"></i>
+                            <h5>Gluten-Free</h5>
+                            <p>Delicious meals without gluten, perfect for sensitive individuals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center h-100">
+                        <div class="card-body">
+                            <i class="bi bi-activity text-danger fs-1 mb-3"></i>
+                            <h5>Athletic</h5>
+                            <p>High-protein meals designed for active lifestyles and muscle building.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Success Stories -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title text-white">Health Transformation Stories</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Lost 20 pounds in 3 months with CloudKitchen Healthy! The meals are delicious and I never felt deprived. Best decision ever!"</p>
+                    <p class="testimonial-author">- Jennifer Martinez</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"As a busy professional, these healthy meals saved my life. No more junk food, just nutritious deliciousness delivered to my office!"</p>
+                    <p class="testimonial-author">- David Thompson</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"My energy levels have skyrocketed since switching to these meals. The variety keeps things interesting and the taste is amazing!"</p>
+                    <p class="testimonial-author">- Lisa Anderson</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Start Your Healthy Journey Today</h2>
+            <p class="mb-4">Join thousands of health-conscious individuals enjoying nutritious meals every day.</p>
+            <div class="hero-buttons justify-content-center">
+                <a href="register.html" class="btn btn-primary btn-lg">Start Healthy Eating</a>
+                <a href="pricing.html" class="btn btn-outline btn-lg">View Diet Plans</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="bi bi-heart-pulse"></i> CloudKitchen Healthy</h3>
+                    <p>Fresh, nutritious meals delivered to your doorstep. Your partner in healthy living and wellness.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Health Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">Nutrition FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Get healthy tips and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CloudKitchen Healthy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./main.js"></script>
+</body>
+</html>

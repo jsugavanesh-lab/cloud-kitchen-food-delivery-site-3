@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - CloudKitchen Kitchen Opening</title>
+    <meta name="description" content="CloudKitchen is coming soon! Get ready for delicious food delivery. Sign up for updates and be the first to know when we launch.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle">
+        <i class="bi bi-moon-fill"></i>
+    </button>
+
+    <!-- Coming Soon Hero -->
+    <section class="hero min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <!-- Kitchen Icon -->
+                    <div class="mb-4">
+                        <i class="bi bi-egg-fried" style="font-size: 5rem; color: var(--primary-color); animation: bounce 2s infinite;"></i>
+                    </div>
+                    
+                    <h1 class="display-3 fw-bold mb-4">Something Delicious is Cooking!</h1>
+                    <h2 class="text-white mb-4">CloudKitchen is Coming Soon</h2>
+                    <p class="lead text-white mb-5">
+                        We're preparing something amazing in our kitchen! Fresh, delicious food delivered to your doorstep is just around the corner.
+                    </p>
+                    
+                    <!-- Countdown Timer -->
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-auto">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="h2 text-primary" id="days">00</div>
+                                    <div class="text-muted">Days</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="h2 text-primary" id="hours">00</div>
+                                    <div class="text-muted">Hours</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="h2 text-primary" id="minutes">00</div>
+                                    <div class="text-muted">Minutes</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="h2 text-primary" id="seconds">00</div>
+                                    <div class="text-muted">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Notification Signup -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">
+                                        <i class="bi bi-bell text-primary"></i> Be the First to Know!
+                                    </h5>
+                                    <p class="text-muted mb-4">Sign up for exclusive updates and a special launch discount</p>
+                                    <form id="notifyForm">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="email" class="form-control" placeholder="Your Email" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                                    <i class="bi bi-send"></i> Notify Me
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="mt-4">
+                        <p class="text-white mb-3">Follow us for updates:</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#" class="btn btn-light btn-sm" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="btn btn-light btn-sm" aria-label="Twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="btn btn-light btn-sm" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="btn btn-light btn-sm" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Preview -->
+    <section class="section features">
+        <div class="container">
+            <h2 class="section-title text-center">What's Coming?</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-lightning"></i>
+                    </div>
+                    <h4>30-Minute Delivery</h4>
+                    <p>Hot, fresh food delivered to your doorstep in just 30 minutes</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>Quality Guaranteed</h4>
+                    <p>Premium ingredients and expert preparation in every meal</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h4>Easy Ordering</h4>
+                    <p>Simple app and website ordering with multiple payment options</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-heart"></i>
+                    </div>
+                    <h4>Customer Love</h4>
+                    <p>24/7 support and satisfaction guaranteed on every order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Menu -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Sneak Peek: Our Menu</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x300?text=Gourmet+Burger" class="card-img-top" alt="Gourmet Burger">
+                        <div class="card-body text-center">
+                            <h5>Gourmet Burger</h5>
+                            <p class="text-muted">Juicy beef patty with fresh vegetables</p>
+                            <p class="text-primary h4 mb-0">Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x300?text=Fresh+Salad" class="card-img-top" alt="Fresh Salad">
+                        <div class="card-body text-center">
+                            <h5>Garden Fresh Salad</h5>
+                            <p class="text-muted">Crisp lettuce with colorful vegetables</p>
+                            <p class="text-primary h4 mb-0">Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x300?text=Wood+Fired+Pizza" class="card-img-top" alt="Wood Fired Pizza">
+                        <div class="card-body text-center">
+                            <h5>Wood Fired Pizza</h5>
+                            <p class="text-muted">Authentic Italian-style pizza</p>
+                            <p class="text-primary h4 mb-0">Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3 class="text-white mb-4">Have Questions?</h3>
+                    <p class="text-white mb-4">We'd love to hear from you! Reach out to us at:</p>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="text-white">
+                                <i class="bi bi-envelope fs-3 mb-2"></i>
+                                <h6>Email</h6>
+                                <p>info@cloudkitchen.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="text-white">
+                                <i class="bi bi-telephone fs-3 mb-2"></i>
+                                <h6>Phone</h6>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="text-white">
+                                <i class="bi bi-geo-alt fs-3 mb-2"></i>
+                                <h6>Location</h6>
+                                <p>New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="bi bi-shop"></i> CloudKitchen</h3>
+                    <p>Fresh, delicious food delivered to your doorstep. Experience the future of dining with our cloud kitchen service.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Stay Updated</h3>
+                    <p>Get notified when we launch!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CloudKitchen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./main.js"></script>
+    
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            // Set the launch date (30 days from now for demo)
+            const launchDate = new Date();
+            launchDate.setDate(launchDate.getDate() + 30);
+            
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+        
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+        
+        // Notify form submission
+        document.getElementById('notifyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            CloudKitchen.showLoading();
+            
+            setTimeout(() => {
+                CloudKitchen.hideLoading();
+                CloudKitchen.showNotification('Thank you for signing up! We\'ll notify you as soon as we launch.', 'success');
+                this.reset();
+            }, 1500);
+        });
+        
+        // Add bounce animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100% {
+                    transform: translateY(0);
+                }
+                40% {
+                    transform: translateY(-20px);
+                }
+                60% {
+                    transform: translateY(-10px);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

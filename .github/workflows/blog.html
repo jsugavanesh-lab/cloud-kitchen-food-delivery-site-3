@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CloudKitchen Food Articles & Healthy Eating Tips</title>
+    <meta name="description" content="Read our latest blog posts about food, healthy eating, kitchen tips, and CloudKitchen updates. Discover recipes and nutrition advice.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle">
+        <i class="bi bi-moon-fill"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <i class="bi bi-shop"></i> CloudKitchen
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                    <li><a href="register.html" class="btn btn-secondary">Sign Up</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobileMenuToggle" class="mobile-menu-toggle">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div id="offcanvas" class="offcanvas">
+        <div class="offcanvas-header">
+            <h3>CloudKitchen</h3>
+            <button id="offcanvasClose" class="offcanvas-close">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Blog</h1>
+            <p>Food articles, healthy eating tips, and kitchen updates</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Search Bar -->
+                    <div class="mb-4">
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Search articles...">
+                            <button class="btn btn-primary" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Blog Posts Grid -->
+                    <div class="row g-4">
+                        <!-- Blog Post 1 -->
+                        <div class="col-md-6 blog-card" data-category="healthy-eating">
+                            <div class="card h-100">
+                                <img src="https://i.pinimg.com/736x/e2/40/cd/e240cd2685fe9b1fe4fb031be5010827.jpg" alt="Healthy Eating" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary">Healthy Eating</span>
+                                        <small class="text-muted ms-2">Feb 10, 2026</small>
+                                    </div>
+                                    <h5 class="card-title">10 Superfoods to Boost Your Immunity</h5>
+                                    <p class="card-text">Discover the most powerful immune-boosting foods that should be part of your daily diet. From citrus fruits to leafy greens, learn how nature's pharmacy can keep you healthy.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">By Dr. Sarah Johnson</small>
+                                        <a href="blog-details.html" class="btn btn-sm btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post 2 -->
+                        <div class="col-md-6 blog-card" data-category="recipes">
+                            <div class="card h-100">
+                                <img src="https://i.pinimg.com/736x/04/81/8f/04818fbd021522615ba35d3cfd697439.jpg" alt="Quick Recipes" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-success">Recipes</span>
+                                        <small class="text-muted ms-2">Feb 8, 2026</small>
+                                    </div>
+                                    <h5 class="card-title">15-Minute Meals for Busy Professionals</h5>
+                                    <p class="card-text">Quick, nutritious recipes that can be prepared in 15 minutes or less. Perfect for busy professionals who want to eat healthy without spending hours in the kitchen.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">By Chef Michael Chen</small>
+                                        <a href="blog-details.html" class="btn btn-sm btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post 3 -->
+                        <div class="col-md-6 blog-card" data-category="kitchen-tips">
+                            <div class="card h-100">
+                                <img src="https://i.pinimg.com/736x/14/0b/76/140b762c6b92c1e2a02ed3291ec80bb5.jpg" alt="Kitchen Tips" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-warning">Kitchen Tips</span>
+                                        <small class="text-muted ms-2">Feb 5, 2026</small>
+                                    </div>
+                                    <h5 class="card-title">Essential Kitchen Tools Every Home Cook Needs</h5>
+                                    <p class="card-text">A comprehensive guide to the must-have kitchen tools that will make your cooking experience more efficient and enjoyable. From basic essentials to professional-grade equipment.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">By Emily Davis</small>
+                                        <a href="blog-details.html" class="btn btn-sm btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post 4 -->
+                        <div class="col-md-6 blog-card" data-category="nutrition">
+                            <div class="card h-100">
+                                <img src="https://i.pinimg.com/1200x/a4/c6/73/a4c673a4e2293bc21980f74ecae9b0e5.jpg" alt="Nutrition" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-info">Nutrition</span>
+                                        <small class="text-muted ms-2">Feb 3, 2026</small>
+                                    </div>
+                                    <h5 class="card-title">Understanding Macronutrients: A Complete Guide</h5>
+                                    <p class="card-text">Learn everything you need to know about proteins, carbohydrates, and fats. This guide breaks down how macronutrients work and how to balance them for optimal health.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">By Nutritionist Alex Kumar</small>
+                                        <a href="blog-details.html" class="btn btn-sm btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post 5 -->
+                        <div class="col-md-6 blog-card" data-category="company-news">
+                            <div class="card h-100">
+                                <img src="https://i.pinimg.com/1200x/2d/dc/b0/2ddcb07e5e80653efe87fe6f7e40496b.jpg" alt="Company News" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-secondary">Company News</span>
+                                        <small class="text-muted ms-2">Feb 1, 2026</small>
+                                    </div>
+                                    <h5 class="card-title">CloudKitchen Expands to New Locations</h5>
+                                    <p class="card-text">Exciting news! We're expanding our delivery service to three new neighborhoods. Find out if your area is now covered and enjoy our special launch offers.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">By CloudKitchen Team</small>
+                                        <a href="blog-details.html" class="btn btn-sm btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post 6 -->
+                        <div class="col-md-6 blog-card" data-category="healthy-eating">
+                            <div class="card h-100">
+                                <img src="https://i.pinimg.com/736x/33/e8/d5/33e8d5fb94544874e7cccc9a4de3cff0.jpg" alt="Mindful Eating" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary">Healthy Eating</span>
+                                        <small class="text-muted ms-2">Jan 28, 2026</small>
+                                    </div>
+                                    <h5 class="card-title">The Art of Mindful Eating</h5>
+                                    <p class="card-text">Discover how practicing mindful eating can transform your relationship with food, improve digestion, and help you make healthier choices naturally.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted">By Wellness Coach Lisa Park</small>
+                                        <a href="blog-details.html" class="btn btn-sm btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Blog pagination" class="mt-4">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Categories -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Categories</h5>
+                            <div class="list-group list-group-flush">
+                                <button class="category-btn list-group-item list-group-item-action active" data-category="all">
+                                    All Categories <span class="badge bg-primary float-end">12</span>
+                                </button>
+                                <button class="category-btn list-group-item list-group-item-action" data-category="healthy-eating">
+                                    Healthy Eating <span class="badge bg-primary float-end">4</span>
+                                </button>
+                                <button class="category-btn list-group-item list-group-item-action" data-category="recipes">
+                                    Recipes <span class="badge bg-primary float-end">3</span>
+                                </button>
+                                <button class="category-btn list-group-item list-group-item-action" data-category="kitchen-tips">
+                                    Kitchen Tips <span class="badge bg-primary float-end">2</span>
+                                </button>
+                                <button class="category-btn list-group-item list-group-item-action" data-category="nutrition">
+                                    Nutrition <span class="badge bg-primary float-end">2</span>
+                                </button>
+                                <button class="category-btn list-group-item list-group-item-action" data-category="company-news">
+                                    Company News <span class="badge bg-primary float-end">1</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Popular Posts -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Popular Posts</h5>
+                            <div class="list-group list-group-flush">
+                                <a href="blog-details.html" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">10 Superfoods to Boost Your Immunity</h6>
+                                        <small>2 days ago</small>
+                                    </div>
+                                    <small>Healthy Eating</small>
+                                </a>
+                                <a href="blog-details.html" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">15-Minute Meals for Busy Professionals</h6>
+                                        <small>4 days ago</small>
+                                    </div>
+                                    <small>Recipes</small>
+                                </a>
+                                <a href="blog-details.html" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">Understanding Macronutrients</h6>
+                                        <small>1 week ago</small>
+                                    </div>
+                                    <small>Nutrition</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Subscribe to Our Newsletter</h5>
+                            <p>Get the latest food tips and recipes delivered to your inbox.</p>
+                            <form class="newsletter-form">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your email" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Popular Tags</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">healthy</span>
+                                <span class="badge bg-secondary">recipes</span>
+                                <span class="badge bg-success">nutrition</span>
+                                <span class="badge bg-danger">quick-meals</span>
+                                <span class="badge bg-warning">kitchen-tips</span>
+                                <span class="badge bg-info">immunity</span>
+                                <span class="badge bg-dark">meal-prep</span>
+                                <span class="badge bg-light text-dark">wellness</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="bi bi-shop"></i> CloudKitchen</h3>
+                    <p>Fresh, delicious food delivered to your doorstep. Experience the future of dining with our cloud kitchen service.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CloudKitchen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./main.js"></script>
+</body>
+</html>
